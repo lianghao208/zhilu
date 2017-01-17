@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.kaiback.realtymanager.DIYVIew.MyViewPager
+        android:id="@+id/main_ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+    </com.kaiback.realtymanager.DIYVIew.MyViewPager>
+
+
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/menu_read"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/read_normal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:scaleType="fitCenter"
+                    android:paddingTop="5dp"
+                    android:src="#0fff97"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:gravity="center|bottom"
+                    android:background="#0fff97"
+                    android:textColor="#ffffff"
+                    android:text="看故事"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/read_selected"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:alpha="0"
+                android:orientation="vertical" >
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:scaleType="fitCenter"
+                    android:paddingTop="5dp"
+                    android:src="#b7c2bd"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|bottom"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="#0fff97"
+                    android:text="看故事"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/menu_write"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/write_normal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:scaleType="fitCenter"
+                    android:paddingTop="5dp"
+                    android:src="#0fff97"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|bottom"
+                    android:textSize="20sp"
+                    android:background="#0fff97"
+                    android:textColor="#ffffff"
+                    android:text="写故事"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/write_selected"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0"
+                android:orientation="vertical" >
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:scaleType="fitCenter"
+                    android:paddingTop="5dp"
+                    android:src="#b7c2bd"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|bottom"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="#0fff97"
+                    android:text="写故事"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/menu_person"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/person_normal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="0dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:scaleType="fitCenter"
+                    android:paddingTop="5dp"
+                    android:src="#0fff97"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|bottom"
+                    android:textSize="20sp"
+                    android:background="#0fff97"
+                    android:textColor="#ffffff"
+                    android:text="我的"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/person_selected"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="0dp"
+                android:alpha="0"
+                android:orientation="vertical" >
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:scaleType="fitCenter"
+                    android:paddingTop="5dp"
+                    android:src="#b7c2bd"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|bottom"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="#0fff97"
+                    android:text="我的"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
