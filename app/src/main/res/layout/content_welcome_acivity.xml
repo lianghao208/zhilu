@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
 
     tools:context="com.kaiback.realtymanager.WelcomeAcivity"
-    tools:showIn="@layout/activity_welcome_acivity">
+    tools:showIn="@layout/activity_welcome_activity">
 
     <ImageView
         android:layout_width="match_parent"

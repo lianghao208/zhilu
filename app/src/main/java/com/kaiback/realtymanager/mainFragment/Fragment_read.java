@@ -16,12 +16,12 @@ import com.kaiback.realtymanager.R;
 
 public class Fragment_read extends Fragment{
     private View view;
+    private TextView tv_read;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         //生成第一个页面的布局
         view = inflater.inflate(R.layout.fragment_read,container,false);
-        TextView tv_read;
         tv_read = (TextView) view.findViewById(R.id.tv_read);
         tv_read.setText("读故事的Fragment");
 

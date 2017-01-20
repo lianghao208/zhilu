@@ -49,6 +49,7 @@ public class LoginVolleyHttp {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, mUrl, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                //统一字符编码
                     try {
                         response=new String(response.trim().getBytes("iso-8859-1"),"UTF-8");
                     } catch (UnsupportedEncodingException e) {

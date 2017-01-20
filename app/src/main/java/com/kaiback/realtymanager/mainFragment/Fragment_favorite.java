@@ -14,16 +14,16 @@ import com.kaiback.realtymanager.R;
  * Created by Administrator on 2017/1/15.
  */
 
-public class Fragment_write extends Fragment{
+public class Fragment_favorite extends Fragment{
     private View view;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         //生成第一个页面的布局
-        view = inflater.inflate(R.layout.fragment_write,container,false);
+        view = inflater.inflate(R.layout.fragment_favorite,container,false);
         TextView tv_write;
-        tv_write = (TextView) view.findViewById(R.id.tv_write);
-        tv_write.setText("写故事的Fragment");
+        tv_write = (TextView) view.findViewById(R.id.tv_favorite);
+        tv_write.setText("收藏的Fragment");
 
         return view;
     }

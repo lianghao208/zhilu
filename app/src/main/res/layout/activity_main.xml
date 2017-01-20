@@ -85,13 +85,13 @@
 
 
         <RelativeLayout
-            android:id="@+id/menu_write"
+            android:id="@+id/menu_favorite"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
             <LinearLayout
-                android:id="@+id/write_normal"
+                android:id="@+id/favorite_normal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical" >
@@ -112,11 +112,11 @@
                     android:textSize="20sp"
                     android:background="#0fff97"
                     android:textColor="#ffffff"
-                    android:text="写故事"/>
+                    android:text="收藏"/>
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/write_selected"
+                android:id="@+id/favorite_selected"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0"
@@ -139,7 +139,7 @@
                     android:textSize="20sp"
                     android:textColor="#ffffff"
                     android:background="#0fff97"
-                    android:text="写故事"/>
+                    android:text="收藏"/>
             </LinearLayout>
         </RelativeLayout>
 
